@@ -1,12 +1,13 @@
-n=[5,2,12,6,7,8,11]
-a=[]
+a=[5,17,8,9,7,6,11]
+b=[]
 i=0
-while i<=len(n):   
-    j=1
-    while j<=n[i]:
-        if a[i]%a[i]==0 and a[i]%1==0:
-            if a[i]%j!=0:
-                a.append(n[i])
-        j=j+1
-    i=i+1
-print(a)
+while i<len(a):
+	j=2
+	while j<a[i]:
+		if a[i]%j==0:
+			break
+		j=j+1
+	else:
+		b.append(a[i])
+	i=i+1
+print(b)
